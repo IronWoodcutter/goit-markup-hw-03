@@ -291,13 +291,13 @@ body {
     display: flex;
     flex-wrap: wrap;
 }
-.work-examples  .item{
+.work-examples .item{
 width: 360px;
+margin-right: 24px;
+} 
+.work-examples  .item.item:nth-child(3n){
+    margin-right: 0;
 }
-
-/* .work-examples  .item + .item{
-    margin-left: 24px;
-}  */
 
 .button-filtr:hover,
 .button-filtr:focus {
