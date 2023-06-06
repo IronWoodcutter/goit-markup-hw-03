@@ -353,7 +353,7 @@ border: 1px solid #E7E9FC;
 
 .button-filtr:hover,
 .button-filtr:focus {
-  border: 1px transparent;
+  border: 1px solid transparent;
   background-color: #404bbf;
   color: #ffffff;
 }
