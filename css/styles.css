@@ -45,11 +45,12 @@ body {
 }
 .header-blok {
   display: flex;
+  border-bottom: 1px solid #E7E9FC;
   /* justify-content: space-between; */
   /* align-items: center; */
 }
 .logo {
-  margin-right: 76px;
+  
   color: #4d5ae5;
   font-family: "Raleway", sans-serif;
   font-weight: 800;
@@ -58,6 +59,10 @@ body {
   /* identical to box height, or 117% */
   letter-spacing: 0.03em;
   text-transform: uppercase;
+}
+
+.cite-nav .logo {
+margin-right: 76px;
 }
 .link {
   text-decoration: none;
@@ -128,8 +133,12 @@ body {
   text-align: center;
 }
 .hero-title {
-  margin-top: 0;
-  margin-bottom: 48px;
+  display: inline-block;
+  margin-top: 188px;
+  
+  margin-bottom: 292px;
+  width: 496px;
+  
 
   color: #ffffff;
   font-weight: 700;
@@ -138,6 +147,10 @@ body {
   text-align: center;
   letter-spacing: 0.02em;
 }
+
+/* .hero-content{
+
+} */
 
 /* Section 2 Peculiarities */
 .section-title {
@@ -201,9 +214,11 @@ body {
 }
 
 .button {
-  border: 0;
-  border-radius: 4px;
   display: inline-block;
+  border: 0;
+  margin-bottom: 188px;
+  border-radius: 4px;
+  
   padding-top: 16px;
   padding-right: 32px;
   padding-bottom: 16px;
@@ -245,6 +260,24 @@ body {
 .footer .part-logo {
   color: #f4f4fd;
 }
+.footer .logo{
+  display: inline-block;
+  margin-bottom: 17.5px;
+}
+
+
+
+.footer-content{
+  display:inline-block;
+  margin-top:100px;
+  margin-right: auto;
+  margin-bottom: 100px;
+  margin-left: 156px;
+  width: 264px;
+}
+
+
+
 
 /* Портфоліо */
 
@@ -254,10 +287,12 @@ body {
   line-height: 1.2;
   letter-spacing: 0.02em;
   color: #2e2f42;
+  margin-bottom: 8px;
 }
 
 .work-examples .text {
   color: #434455;
+  margin-bottom: 32px;
 }
 
 .button-filtr {
@@ -290,13 +325,30 @@ body {
 .work-examples{
     display: flex;
     flex-wrap: wrap;
+   
 }
+
+
+
+
+
 .work-examples .item{
 width: 360px;
 margin-right: 24px;
+margin-bottom: 48px;
+border: 1px solid #E7E9FC;
+
+
 } 
-.work-examples  .item.item:nth-child(3n){
+
+
+
+.work-examples .item:nth-child(3n){
     margin-right: 0;
+}
+
+.work-examples .item:nth-last-child(-n+3){
+  margin-bottom: 0;
 }
 
 .button-filtr:hover,
